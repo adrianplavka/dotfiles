@@ -82,5 +82,5 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-source ~/dotfiles/zsh/prompt.sh
+#source ~/dotfiles/zsh/prompt.sh
 export PATH=$PATH:$HOME/dotfiles/utils
