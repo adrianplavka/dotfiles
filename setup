@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm "$HOME/.config/fish"
+rm "$HOME/.config/nvim"
+rm "$HOME/.tmux.conf"
+
+ln -sf "$PWD/fish" "$HOME/.config/fish"
+ln -sf "$PWD/nvim" "$HOME/.config/nvim"
+ln -sf "$PWD/tmux.conf" "$HOME/.tmux.conf"
