@@ -26,6 +26,10 @@ return {
       opts.scroll = {
         enable = false,
       }
+
+      opts.resize = {
+        enable = false,
+      }
     end,
   },
 }
