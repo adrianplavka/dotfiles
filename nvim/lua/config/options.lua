@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.opt.scrolloff = 10
+vim.opt.mouse = nil
 
 ---------------- Undercurl ----------------
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
