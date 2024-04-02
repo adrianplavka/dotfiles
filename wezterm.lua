@@ -4,12 +4,39 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
-
--- For example, changing the color scheme:
 config.hide_tab_bar_if_only_one_tab = true
-config.color_scheme = nil
-config.window_background_opacity = 0.93
+config.color_scheme = "Pretty and Pastel (terminal.sexy)"
+config.window_background_opacity = 0.95
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
+config.mouse_bindings = {
+  -- Disable the default click behavior
+  {
+    event = { Up = { streak = 1, button = "Left" } },
+    mods = "NONE",
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+  -- Command/Ctrl-click will open the link under the mouse cursor
+  {
+    event = { Up = { streak = 1, button = "Left" } },
+    mods = "SUPER",
+    action = wezterm.action.OpenLinkAtMouseCursor,
+  },
+  {
+    event = { Up = { streak = 1, button = "Left" } },
+    mods = "CTRL",
+    action = wezterm.action.OpenLinkAtMouseCursor,
+  },
+  -- Disable the Ctrl-click down event to stop programs from seeing it when a URL is clicked
+  {
+    event = { Down = { streak = 1, button = "Left" } },
+    mods = "SUPER",
+    action = wezterm.action.Nop,
+  },
+  {
+    event = { Down = { streak = 1, button = "Left" } },
+    mods = "CTRL",
+    action = wezterm.action.Nop,
+  },
+}
 
--- and finally, return the configuration to wezterm
 return config
