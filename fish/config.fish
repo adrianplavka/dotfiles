@@ -8,8 +8,13 @@ alias g=git
 alias k=kubectl
 alias clipc=pbcopy
 alias clipp=pbpaste
-
+alias tmux="tmux -2"
 alias dot="z dotfiles"
+
+export VISUAL=nvim
+export MANPAGER=nvim
+export EDITOR=nvim
+export GIT_EDITOR=nvim
 export KUBE_EDITOR=nvim
 
 if type -q zoxide

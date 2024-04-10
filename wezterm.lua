@@ -4,9 +4,18 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+config.term = "xterm-256color"
+config.color_scheme = "Dotshare (terminal.sexy)"
+-- config.color_scheme = "Argonaut"
+-- config.color_scheme = "Abernathy"
+-- config.color_scheme = "Ciapre"
+-- config.color_scheme = "Dawn (terminal.sexy)"
+-- config.color_scheme = "Peppermint"
+-- config.color_scheme = "Pulp (terminal.sexy)"
+
+config.font = wezterm.font("JetBrains Mono", { weight = "DemiBold" })
 config.hide_tab_bar_if_only_one_tab = true
-config.color_scheme = "Pretty and Pastel (terminal.sexy)"
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.98
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 config.mouse_bindings = {
   -- Disable the default click behavior
