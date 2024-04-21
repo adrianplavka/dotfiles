@@ -5,6 +5,11 @@ end
 alias z=zoxide
 alias v=nvim
 alias g=git
+alias ga="git add"
+alias gc="git commit"
+alias gs="git status"
+alias gbv="git branch -v"
+alias gbl="git branch -l"
 alias k=kubectl
 alias clipc=pbcopy
 alias clipp=pbpaste
