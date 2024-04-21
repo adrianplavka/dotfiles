@@ -4,10 +4,5 @@
 
 vim.opt.scrolloff = 10
 vim.opt.mouse = nil
-
----------------- Undercurl ----------------
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
-
----------------- Editorconfig ----------------
+vim.o.termguicolors = true
 vim.g.editorconfig = true

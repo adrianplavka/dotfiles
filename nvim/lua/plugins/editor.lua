@@ -67,6 +67,12 @@ return {
       end,
     },
     {
+      ";y",
+      function()
+        vim.cmd("Telescope neoclip")
+      end,
+    },
+    {
       "sf",
       function()
         local telescope = require("telescope")
