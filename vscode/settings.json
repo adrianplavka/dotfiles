@@ -1,48 +1,32 @@
 {
-  "custom-ui-style.font.sansSerif": "Dank Mono",
-  "editor.fontFamily": "Dank Mono, 'JetBrainsMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
-  "editor.fontLigatures": true,
   "chat.editor.fontWeight": "bold",
+  "custom-ui-style.font.sansSerif": "'JetBrainsMono Nerd Font'",
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.indentSize": 2,
+  "editor.inlineSuggest.enabled": true,
+  "editor.rulers": [110],
   "editor.suggestFontSize": 14,
   "editor.suggestLineHeight": 28,
-  "editor.accessibilitySupport": "off",
+  "files.associations": {"*.html": "html"},
   "git.autorefresh": true,
+  "gitlens.advanced.messages": {"suppressLineUncommittedWarning": true},
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 0,
-  "workbench.colorTheme": "Kanagawa Black",
-  "workbench.colorCustomizations": {
-    "[Kanagawa Black]": {
-      "tab.activeBorder": "#0A84FF"
-    }
-  },
-  "workbench.editorAssociations": {
-    "*.svg": "default"
-  },
-  "workbench.iconTheme": "catppuccin-frappe",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true,
-  "editor.rulers": [110],
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "editor.inlineSuggest.enabled": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "nxConsole.showNodeVersionOnStartup": false,
-  "zig.path": "",
-  "zig.zls.path": "/Users/adrianplavka/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-  "zig.initialSetupDone": true,
-  "vim.leader": "<space>",
   "vim.easymotion": true,
-  "vim.smartRelativeLine": true,
-  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     // Navigation
-    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
-    { "before": ["[", "b"], "commands": ["workbench.action.previousEditor"] },
-    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
-    { "before": ["]", "b"], "commands": ["workbench.action.nextEditor"] },
+    {"before": ["<S-h>"], "commands": ["workbench.action.previousEditor"]},
+    {"before": ["[", "b"], "commands": ["workbench.action.previousEditor"]},
+    {"before": ["<S-l>"], "commands": ["workbench.action.nextEditor"]},
+    {"before": ["]", "b"], "commands": ["workbench.action.nextEditor"]},
     {
       "before": ["[", "B"],
       "commands": ["workbench.action.moveEditorLeftInGroup"]
@@ -51,7 +35,7 @@
       "before": ["]", "B"],
       "commands": ["workbench.action.moveEditorRightInGroup"]
     },
-    { "before": ["<leader>", "b", "d"], "after": ["<C-w>", "q"] },
+    {"before": ["<leader>", "b", "d"], "after": ["<C-w>", "q"]},
     {
       "before": ["<leader>", "b", "o"],
       "commands": ["workbench.action.closeOtherEditors"]
@@ -62,32 +46,20 @@
       "before": ["[", "h"],
       "commands": ["workbench.action.editor.previousChange"]
     },
-    {
-      "before": ["]", "h"],
-      "commands": ["workbench.action.editor.nextChange"]
-    },
+    {"before": ["]", "h"], "commands": ["workbench.action.editor.nextChange"]},
     {
       "before": ["<leader>", "h", "r"],
       "commands": ["git.revertSelectedRanges"]
     },
 
     // Splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
+    {"before": ["leader", "v"], "commands": [":vsplit"]},
+    {"before": ["leader", "s"], "commands": [":split"]},
 
     // Editor
-    {
-      "before": ["K"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    },
+    {"before": ["K"], "commands": ["editor.action.showHover"]},
+    {"before": ["[", "d"], "commands": ["editor.action.marker.prev"]},
+    {"before": ["]", "d"], "commands": ["editor.action.marker.next"]},
     {
       "before": ["<leader>", "g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -108,22 +80,25 @@
       "before": ["<leader>", "g", "r"],
       "commands": ["editor.action.referenceSearch.trigger"]
     },
-    { "before": [";", "e"], "commands": ["workbench.view.explorer"] },
-    { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] },
-    {
-      "before": ["<leader>", "f", "e"],
-      "commands": ["workbench.view.explorer"]
-    },
-    { "before": [";", "g"], "commands": ["workbench.view.scm"] },
-    { "before": [";", "r"], "commands": ["workbench.action.quickTextSearch"] },
-    { "before": [";", "x"], "commands": ["workbench.view.extensions"] },
-    { "before": ["<leader>", "c", "r"], "commands": ["editor.action.rename"] }
+    {"before": [";", "e"], "commands": ["workbench.view.explorer"]},
+    {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
+    {"before": ["<leader>", "f", "e"], "commands": ["workbench.view.explorer"]},
+    {"before": [";", "g"], "commands": ["workbench.view.scm"]},
+    {"before": [";", "r"], "commands": ["workbench.action.quickTextSearch"]},
+    {"before": [";", "x"], "commands": ["workbench.view.extensions"]},
+    {"before": ["<leader>", "c", "r"], "commands": ["editor.action.rename"]}
   ],
-  "githubPullRequests.terminalLinksHandler": "github",
-  "workbench.sideBar.location": "right",
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
   "window.commandCenter": false,
+  "workbench.colorCustomizations": {
+    "[Kanagawa Black]": {"tab.activeBorder": "#0A84FF"}
+  },
+  "workbench.colorTheme": "Kanagawa Black",
+  "workbench.editorAssociations": {"*.svg": "default"},
+  "workbench.iconTheme": "catppuccin-frappe",
   "workbench.layoutControl.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
-  }
+  "workbench.sideBar.location": "right",
+  "zig.path": "",
+  "zig.zls.enabled": "on"
 }
