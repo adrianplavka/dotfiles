@@ -42,7 +42,3 @@ set -l EXTENDS_CONFIG_PATH ~/.extends.fish
 if test -f "$EXTENDS_CONFIG_PATH"
     source $EXTENDS_CONFIG_PATH
 end
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-set --export --prepend PATH "/Users/adrianplavka/.rd/bin"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

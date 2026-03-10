@@ -95,7 +95,7 @@ return {
     },
   },
   config = function(_, opts)
-    opts.default = vim.tbl_deep_extend("force", opts.defaults, {
+    opts.defaults = vim.tbl_deep_extend("force", opts.defaults or {}, {
       wrap_results = true,
       layout_strategy = "horizontal",
       layout_config = { prompt_position = "top" },
