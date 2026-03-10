@@ -41,6 +41,7 @@ return {
           "http",
           "java",
           "php",
+          "ruby",
           "rust",
           "scss",
           "sql",
@@ -54,9 +55,12 @@ return {
         vim.filetype.add({
           extension = {
             mdx = "mdx",
+            Brewfile = "ruby",
           },
         })
+
         vim.treesitter.language.register("markdown", "mdx")
+        vim.treesitter.language.register("ruby", "Brewfile")
       end,
     },
   },

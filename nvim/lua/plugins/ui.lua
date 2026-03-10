@@ -33,6 +33,14 @@ return {
     end,
   },
   {
+    "nvim-mini/mini.icons",
+    opts = {
+      file = {
+        ["Brewfile"] = { glyph = "󰴭", hl = "MiniIconsRed" },
+      },
+    },
+  },
+  {
     "akinsho/bufferline.nvim",
     keys = {
       { "[B", "<cmd>BufferLineMovePrev<cr>", desc = "Move Prev Buffer" },
