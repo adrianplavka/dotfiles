@@ -1,0 +1,64 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "agent_servers": {
+    "opencode": {
+      "favorite_models": [
+        "anthropic/claude-sonnet-4-6",
+        "anthropic/claude-opus-4-6",
+        "anthropic/claude-haiku-4-5-20251001",
+      ],
+      "default_mode": "plan",
+      "default_model": "anthropic/claude-opus-4-6",
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
+  },
+  "theme": "Kanagawa Black",
+  "icon_theme": "Bearded Icons",
+  "ui_font_family": "DankMono Nerd Font",
+  "ui_font_size": 16.0,
+  "ui_font_weight": 600,
+  "buffer_font_family": "DankMono Nerd Font",
+  "buffer_font_size": 15.0,
+  "buffer_font_weight": 600,
+  "agent_buffer_font_size": 16.0,
+  "agent_ui_font_size": 16.0,
+  "terminal": {
+    "font_size": 15.0,
+    "font_weight": 600,
+  },
+  "project_panel": {
+    "default_width": 300.0,
+    "dock": "left",
+    "entry_spacing": "standard",
+    "folder_icons": true,
+    "file_icons": true,
+    "git_status": true,
+    "indent_size": 20.0,
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_close_button": "hover",
+    "show_diagnostics": "errors",
+  },
+  "vim_mode": true,
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+    },
+  },
+}
