@@ -17,6 +17,7 @@ abbr -a -- gc "git checkout"
 abbr -a -- gcb "git checkout -b"
 abbr -a -- gl "git log"
 abbr -a -- gs "git status"
+abbr -a -- grbo git_rebase_onto
 abbr -a -- k kubectl
 abbr -a -- tmux "tmux -2"
 
